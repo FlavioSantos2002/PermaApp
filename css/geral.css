@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    height: 100%;
+}
+
+#corpo{
+    padding-top: 1em;
+    text-align: center;
+    background-color: #c6ecae;
+    margin-top: -0.5em;
+    padding-bottom: 5em;
+}
+
+@media (max-width: 1024px) {
+    /* Quando a largura for igual ou inferior a 600px */
+    body {
+        height: 100vh; /* Nova altura desejada */
+    }
+    #corpo{
+        height: 100vh; 
+    }
+}
+
+#corpo h2{
+    padding-bottom: 0.5em;
+}
+
+#corpo #mapa{
+    text-align: center;
+}
+
+#corpo img{   
+    width: 50%;
+    height: 50%;
+}
+
+area:hover {
+    outline: 2px solid red;
+}
+
+#imagens_carrocel img{
+    width: 50%;
+    height: 50%;
+}
+
+.carousel-inner {
+    padding-top: 3em;
+    padding-left: 35%;
+}
+
+
+span.carousel-control-next-icon {
+    margin-right: 8em;
+}
+
+
+span.carousel-control-prev-icon {
+    margin-left: 8em;
+}

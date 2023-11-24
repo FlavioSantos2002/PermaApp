@@ -1,164 +1,100 @@
 @charset "UTF-8";
 
 
-* {
-    margin: 0;
-    padding: 0;
+#img1 {
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: -0.75em;
+  margin-right: 1em;
+  display: inline-block;
+}
+
+#img2{
+  width: 2.5em;
+  height: 2.5em;
+  margin-left: -0.75em;
+  margin-right: -0.6em;
+  display: inline-block;
 }
 
 
-body{
-    background-color: #ffffff;;
+#nada {
+  margin-top: -0.47em;
 }
 
-.cabeca{
-    background-image: linear-gradient(to bottom, #4bffa8, #0f542d);
+#nada div{
+  background-color: #19882C;
 }
 
-header{
-    display: flex;
-    background-image: linear-gradient(to bottom, #4bffa8, #0f542d);
-    margin: 0;
-    height: 3em;
-    padding: 0%;
-    width: 100vw;
+#nada a:hover:not(#nao) {
+  background-color: #34b352;
 }
 
-nav{
-    background-image: linear-gradient(to bottom, #4bffa8, #0f542d);
-    padding-left: 2em;
-    display: flex;
-}
 
-.bot{
-    display: inline-block;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    
-}
-
-.bot_donate{
-    padding-left: 2em;
-    position: fixed;
-    right: 4em;
-    top: 0;
-}
-
-.botoes_menu {
-    height: 2em;
-    display: inline-block;
-    padding: 2ch 2ch;
-    text-decoration: none;
-    color: #fff;
-    transition: background-color 0.3s ease;
-}
-
-.bot:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+#donate{
+  display: flex;
 }
 
 
 .glow-on-hover {
-    width: 12ch;
-    height: 6.5ch;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: rgb(89,105,210);
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+  position: fixed;
+  top: 1.3cm;
+  right: 0.25em;
+  width: 10ch;
+  height: 4ch;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  /* position: relative; */
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #00d9ff, #ff7300, #00ff0d, #00fffb, #6aff00, #00ff55, #7a00ff, #ff00c8, #00ff2a);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
 }
 
 .glow-on-hover:active {
-    color: #fb0000
+  color: #000
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgb(89,105,210);
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5969D2;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-
-
-
-
-.texto1{
-    padding-left: 0.5em;
-    padding-top: 0.5em;
-}
-
-.simb{
-    width: 3em;
-    height: 3em;
-}
-
-.img_if{
-    width: 3em;
-    height: 3em;
-    position: fixed;
-    right: 0.5em;
-    top: 0;
-}
-
-
-@media screen and (max-width: 790px) {
-    .bot {
-        display: block;
-        margin: 10px 0;
-    }
-}
-
-.menu-icon {
-    display: none;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 790px) {
-    .botoes_menu {
-        display: none;
-    }
-
-    .menu-icon {
-        display: block;
-    }
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }

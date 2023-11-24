@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+
+#rodape{
+    padding-top: 1em;
+    display: flex;
+    background-color: #19882C;
+}
+
+#rodape img{
+    width: 10em;
+    height: 10em;
+}
+
+#rodape h3{
+    display: inline-block;
+    width: 10em;
+    font-size: 1.31em;
+    position: absolute;
+    left: 8em;
+    margin-top: 2.5em;
+}

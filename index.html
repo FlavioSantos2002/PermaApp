@@ -5,44 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PermaApp</title>
     <link rel="stylesheet" href="css/header.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <script src="js/cod.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="cabeca">
-        <header>
-            <img class = "simb" src="fotos usadas/menor.jpg" alt="simbolo PermaPassos">
-            <h2 class="texto1">PermaPassos</h2>
-            <nav>           
-                <div class="bot"><a class="botoes_menu" href="#">Home</a></div> 
-                <div class="bot"><a class="botoes_menu" href="#">Trilhas</a></div> 
-                <div class="bot"><a class="botoes_menu" href="#">C.R.A</a></div>
-                <div class="bot"><a class="botoes_menu" href="#">Metas</a></div>
-                <div class="menu-icon" onclick="toggleMenu()">☰</div>
-                <div class="bot_donate"><button class="glow-on-hover" type="button">Donate</button></div>
-                <img class="img_if" src="fotos usadas/ifam_png.png.webp" alt="ifam">
 
-            </nav>
-        </header>
+    <!-- HERADER -->
+    <div id="donate">
+        <button class="glow-on-hover" type="button">donate</button>
     </div>
-    <!-- 
-    <main>
-        <h1>Mapa de trilhas C.R.A</h1>
-        <section>
-            <img src="fotos usadas/foto mapa geral/mapa geral.png" alt="mapa CRA">
-        </section>
-    </main>
-    <footer>
-        <address>
-            <p>Entre em contato:</p>
-            <p>Telefone: <a href="tel:+123456789">+123 456 789</a></p>
-            <p>Email: <a href="mailto:contato@meusite.com">contato@meusite.com</a></p>
-        </address>
-        <div>
-            <p>Desenvolvido por PermaTec em parceria com ...</p>
+    <div id="nada">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+            <img id="img1" src="fotos usadas/menor.jpg" alt="simbolo">
+            <a id="nao" class="navbar-brand">PermaPassos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">C.R.A</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Metas</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Trilhas
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">BeeEcoTrilha</a></li>
+                    <li><a class="dropdown-item" href="#">Suinos</a></li>
+                    <li><a class="dropdown-item" href="#">Laguinho</a></li>
+                    </ul>
+                </li>
+                </ul>
+                
+            </div>
+            <img id="img2" src="fotos usadas/ifam_png.png.webp" alt="ifam">
+            </div>
+        </nav>  
+    </div>
+
+    <div id="corpo">
+        <div id="mapa">
+            <h2>Mapa Trilhas C.R.A</h2>
+            <img src="fotos usadas/foto mapa geral/mapa geral.png" alt="mapa geral" usemap="#mapa">
+            <map name="mapa">
+                <area shape="rect" coords="250,100,350,200" href="#" alt="trilha das abelhas">
+            </map>
         </div>
-    </footer>
-    -->
+        <h2 style="margin-top: 1em;">imagens C.R.A</h2>
+        <div id="carrossel" style="margin-top: -3em;">
+            <div class="container">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <img src="fotos usadas/ft_carrocel1.jpeg" class="d-block" alt="foto ifam">
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <img src="fotos usadas/ft_carrocel2.jpeg" class="d-block" alt="foto ifam">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="fotos usadas/ft_carrocel3.jpeg" class="d-block" alt="foto ifam">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <img src="fotos usadas/_f11c15d9-f375-4a58-b1b6-9421eb53cae8-fotor-bg-remover-202309300111.png" alt="simbolo">
+        <h3>PermaPassos: Trilhas para Sustentabilidade</h3>
+    </div>
+
     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
