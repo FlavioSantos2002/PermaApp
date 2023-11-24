@@ -39,7 +39,7 @@
 .glow-on-hover {
   position: fixed;
   top: 1.3cm;
-  width: max-content;
+  width: 10ch;
   height: 5%;
   border: none;
   outline: none;
