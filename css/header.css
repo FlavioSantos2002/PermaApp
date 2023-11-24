@@ -39,9 +39,9 @@
 .glow-on-hover {
   position: fixed;
   top: 1.3cm;
-  right: 0.25em;
-  width: 10ch;
-  height: 4ch;
+  right: 1em;
+  width: max-content;
+  height: 5%;
   border: none;
   outline: none;
   color: #fff;
