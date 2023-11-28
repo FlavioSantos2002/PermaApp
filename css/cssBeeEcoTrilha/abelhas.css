@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.rounded-circle {
+    background-image: url("../../icone.png");
+    border-radius: 50%!important;
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir todo o plano de fundo */
+    background-position: center; /* Centraliza a imagem no plano de fundo */
+    background-repeat: no-repeat;
+}
+
+li button a{
+    text-decoration: none;
+    color: white;
+}
+
+.col {
+    background-color: #c9a538;
+    flex: 1 0 0%;
+}
+
+main{
+    min-height: 80vh;
+}

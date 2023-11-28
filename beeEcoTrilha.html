@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PermaApp</title>
-    <link rel="shortcut icon" href="fotos usadas/menor.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/geral.css">
-    <link rel="stylesheet" href="css/rodape.css">
-    <script src="js/cod.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PermaApp</title>
+        <link rel="shortcut icon" href="fotos usadas/menor.jpg" type="image/x-icon">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/cssBeeEcoTrilha/corpo.css">
+        <link rel="stylesheet" href="css/rodape.css">
+        <script src="js/cod.js" defer></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    </head>
+<body style="background-color: #c9a538; cursor: url('https://images2.imgbox.com/1e/a8/MIQg7awe_o.png'), auto;">
+    
 
-<body>
-
-    <!-- HERADER -->
     <div id="nada">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -39,6 +38,7 @@
                         <button class="glow-on-hover" type="button"><a href="pix.html">donate</a></button>
                     </div>
                 </li>
+
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Trilhas
@@ -57,41 +57,30 @@
         </nav>  
     </div>
 
-    <div id="corpo">
-        <div id="mapa">
-            <h2>Mapa Trilhas C.R.A</h2>
-            <img src="fotos usadas/foto mapa geral/mapa geral.png" alt="mapa geral" usemap="#mapa">
-            <map name="mapa">
-                <area shape="rect" coords="250,100,350,200" href="abelhas.html" alt="trilha das abelhas">
-            </map>
-        </div>
-        <h2 style="margin-top: 1em;">imagens C.R.A</h2>
-        <div id="carrossel" style="margin-top: -3em;">
-            <div class="container">
-                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-interval="10000">
-                            <img src="fotos usadas/ft_carrocel1.jpeg" class="d-block" alt="foto ifam">
-                        </div>
-                        <div class="carousel-item" data-interval="2000">
-                            <img src="fotos usadas/ft_carrocel2.jpeg" class="d-block" alt="foto ifam">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="fotos usadas/ft_carrocel3.jpeg" class="d-block" alt="foto ifam">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+
+    <main>
+        <div class="card" style="margin: auto;">
+            <img class="card-img-top" src="fotos usadas/abelhas/jandaira.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Jandaíra<br>(Melipona seminigra merrillae)</h5>
+              <p class="card-text">Abelhas de porte médio e robustas, com comprimento de 11mm e coloração castanho escura.
+                Na natureza, constroem ninhos em ocos de árvore. A entrada do ninho é caracterizada por um tubo na forma de corneta, com bordas feitas de geoprópolis. São bem adaptadas a caixas padronizadas modelo INPA 20x20cm</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"> <b> Polinização de Plantas: </b> As abelhas jandaíras, como outras espécies de abelhas, são polinizadoras essenciais. Elas visitam flores em busca de néctar e, ao fazer isso, transferem o pólen de uma flor para outra, promovendo a reprodução das plantas. Esse processo é vital para o crescimento de muitos alimentos e plantas que sustentam ecossistemas saudáveis.</li>
+              <li class="list-group-item"><b>Educação e Conscientização:</b> Manter populações saudáveis de abelhas jandaíras em sistemas permaculturais também pode servir como uma ferramenta educacional. Isso ajuda a conscientizar as pessoas sobre a importância das abelhas na manutenção da vida vegetal e na sustentabilidade.</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Saiba mais</a>
+              <a href="index.html" class="card-link">mapa</a>
             </div>
         </div>
-    </div>
+    </main>
+
+
+
+
+
 
     <footer class="rodape" id="contato">
         <div class="rodape-div">
@@ -136,11 +125,12 @@
         </div>
         <p class="rodape-direitos">Desenvolvido por Equipe PermaTech</p>
     </footer>
-
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    
 </body>
 </html>

@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+li button a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    min-height: 80vh;
+    margin: auto;
+    margin-top: -0.5em;
+    width: 70vw;
+}
+
+.card{
+    width: 50vw;
+}
+
+.card-link {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    padding: 5px 10px; /* Adiciona algum preenchimento para melhorar a aparência */
+    background-color: #007BFF; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    display: inline-block; /* Permite ajustar largura e altura */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para o efeito de hover */
+}
+
+/* Estilo de hover para as âncoras */
+.card-link:hover {
+    background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+}
+
+
+@media (max-width: 1024px) {
+    main{
+        width: 80vw;
+    }
+}
+
+@media (max-width: 600px) {
+    main{
+        width: 100vw;
+    }
+
+    .card{
+        width: 100vw;
+    }
+}

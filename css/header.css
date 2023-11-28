@@ -9,6 +9,11 @@
   display: inline-block;
 }
 
+li button a{
+  text-decoration: none;
+  color: white;
+}
+
 #img2{
   width: 2.5em;
   height: 2.5em;
@@ -37,8 +42,8 @@
 
 
 .glow-on-hover {
-  position: fixed;
-  top: 1.3cm;
+  position: relative;
+  margin-top: 0.5em;
   width: 10ch;
   height: 5%;
   border: none;
@@ -50,6 +55,9 @@
   z-index: 0;
   border-radius: 10px;
 }
+
+
+
 
 .glow-on-hover:before {
   content: '';
