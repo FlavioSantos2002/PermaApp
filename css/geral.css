@@ -29,12 +29,17 @@ li button a{
         height: 100vh; /* Nova altura desejada */
     }
     #corpo{
-        height: 100vh; 
+
+        padding-bottom: 5em; 
     }
 }
 
 #corpo h2{
     padding-bottom: 0.5em;
+    color: #000;
+    text-align: center;
+    font-family: Lora;
+    font-weight: bold;
 }
 
 #corpo #mapa{
@@ -44,6 +49,10 @@ li button a{
 #corpo img{   
     width: 50%;
     height: 50%;
+}
+
+div.container img{
+    border-radius: 5%
 }
 
 area:hover {
@@ -69,3 +78,190 @@ span.carousel-control-next-icon {
 span.carousel-control-prev-icon {
     margin-left: 8em;
 }
+
+/* css do banner e do section de Permacultura*/
+
+div.text_image{
+    font-weight: bold;
+    background: rgba(41, 41, 41, 0.50);
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+div.text_image p{
+    color: #FFF;
+    font-family: Elsie Swash Caps;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+div.text_image a {
+    color: #FFF;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5em;
+    font-size: 30px;
+    background-color: #5969D2;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    }
+
+#banner {
+    background-image: url("../fotos usadas/ifam.png");
+    background-size: 100%;
+    cursor: default;
+    padding: 6em 0;
+    text-align: left;
+    background-repeat: no-repeat;
+}
+
+div.what_is_permacultura {
+    background-size: 100%;
+    border-radius: 1em;
+    background: #C9A538;
+    cursor: default;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+div.what_is_permacultura_2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: block;
+    padding: 1em;
+    margin: 1em;
+}
+
+#permacultura{
+    margin: 5%;
+    background: white;
+    text-align: center;
+}
+
+#per_cul{
+    color:  #6fe526;
+    text-align: center;
+    font-family: Lora;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+#permacultura h2{
+    color: #000;
+    text-align: center;
+    font-family: Lora;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+#logo {
+    width: 5em;
+    height: auto;
+}
+
+div.box {
+	display: inline-block;
+    margin: 2%;
+}
+div.box img{
+    width: 60%;
+}
+
+div.box p{
+    color: #000;
+    text-align: center;
+    font-family: IBM Plex Sans Devanagari;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#terra{
+    color: #19882C;
+    font-family: IBM Plex Sans Devanagari;
+    font-size: 21px;
+    font-style: bold;
+    font-weight: bold;
+    line-height: normal;
+}
+
+#pessoas{
+    color: #C7583F;
+    font-family: IBM Plex Sans Devanagari;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+#futuro{
+    color: #646B9D;
+    font-family: IBM Plex Sans Devanagari;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+#plan_image{
+    margin: 3%;
+    width: 50%;
+}
+
+@media (max-width: 1200px) {
+    div.text_image{
+        width: 50%;
+        margin: 1em;
+    }
+
+    div.text_image p{
+        font-size: 30px;  
+    }
+    
+    div.text_image a {
+        font-size: 1em;
+    }
+    #banner {
+        padding-top: 1em;
+    }
+    #permacultura h2{
+        font-size: 30px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    div.text_image{
+        width: 100%;
+        margin: 1%;
+    }
+
+    div.text_image p{
+        font-size: 20px;  
+    }
+    
+    div.text_image a {
+        font-size: 1em;
+    }
+    #banner {
+        padding-top: 1em;
+    }
+    #permacultura h2{
+        font-size: 25px;
+    }
+    
+  }

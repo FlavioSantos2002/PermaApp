@@ -23,3 +23,13 @@ function formatarMoeda() {
     elemento.value = valor;
     if(valor == 'NaN') elemento.value = '';
 }
+
+$('#banner a[href^="#permacultura"]').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+    targetOffset = $(id).offset().top;
+        
+    $('html, body').animate({ 
+        scrollTop: targetOffset - 50
+    }, 500);
+    });
