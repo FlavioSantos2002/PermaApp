@@ -1,6 +1,6 @@
 .video-container {
     max-width: 600px;
-    margin: 0 15px;
+    margin: 0 auto;
 }
 
 .video-container iframe {
